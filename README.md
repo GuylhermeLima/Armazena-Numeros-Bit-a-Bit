@@ -3,7 +3,7 @@
 
 # Como usar
 1. Você precisa ter o GCC instalado
-2. No terminal digite:  "gcc main.c -o Programa"  para compilar o código
+2. No terminal digite:  "gcc TR10_539108.c -o Programa"  para compilar o código
 3. Ainda no Terminal digite: "./Programa" para executar o código
 
 # como funciona
