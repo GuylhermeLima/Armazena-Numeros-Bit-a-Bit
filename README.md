@@ -4,8 +4,8 @@
 ## Como usar
 1. Você precisa ter o GCC instalado
 2. Baixe o arquivo main.c
-3. No terminal digite:  *gcc main.c -o Programa*  para compilar o código
-4. Ainda no Terminal digite:  *./Programa*  para executar o código
+3. No terminal digite:  *' gcc main.c -o Programa '*  para compilar o código
+4. Ainda no Terminal digite:  *' ./Programa '*  para executar o código
 
 ## como funciona
 - O programa armazena entradas de **0 a 5000**
