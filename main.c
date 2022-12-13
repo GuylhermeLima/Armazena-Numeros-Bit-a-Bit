@@ -6,13 +6,13 @@ int main(){
    	unsigned int save[200];	//armazena tudo
    	int entr;				//entrada
    	int aux;				//auiliar
-   	int div;				//valor da divisão
+   	int divi;				//valor da divisão
    	int res;				//valor do resto
    	int veri;				//verificador
    	int i;					//laço for
 
-	for(div = 0; div <= 200; div++){	//laço para zerar todas posições de X e não bugar mais na frente...
-		save[div]=0;
+	for(divi = 0; divi <= 200; divi++){	//laço para zerar todas posições de X e não bugar mais na frente...
+		save[divi]=0;
 	};
    	
    	printf("Digite um numero de 0 a 5000: ");		//Recebe o primeiro número
@@ -21,13 +21,13 @@ int main(){
 	while(entr != -1){									//laço while para terminar com "-1"
 
 		if(entr >= 0 && entr <= 5000){					//define tamanho do número de entrada
-			div = entr / 32;			//divisão para saber qual posição do vetor
+			divi = entr / 32;			//divisão para saber qual posição do vetor
 			
 			res = entr%32;				//resto da divisão
 
 			aux = 1 << res;				//move os bits com o valor do resto e armaena em aux
 			
-			save[div] = save[div] | aux;	//compara e guarda os bits
+			save[divi] = save[divi] | aux;	//compara e guarda os bits
 
 			printf("Digite um numero de 0 a 5000: ");		//entrada de outro número
 			scanf("%d",&entr);
@@ -39,16 +39,16 @@ int main(){
 
 	printf("\nVoce digitou:");				//Quando sai do "laço de entrada de dados"
 
-	for(div = 0; div <= 200; div++){			//laço para percorrer todas posições de save e mostrar todos números em ordem crescente.
+	for(divi = 0; divi <= 200; divi++){			//laço para percorrer todas posições de save e mostrar todos números em ordem crescente.
 		
-		if(save[div]!=0){						//se a posição do valor div em save não for vazia
+		if(save[divi]!=0){						//se a posição do valor divi em save não for vazia
 			
 			for(i = 0; i <= 31; i++){		//laço para verificar o número
 				
-				veri = save[div] >> i;				//move vetor para posição do número
+				veri = save[divi] >> i;				//move vetor para posição do número
 				
 				if(veri&1){					//se tiver um bit printa o respectivo número
-					printf(" %d",32*div+i);
+					printf(" %d",32*divi+i);
 				};
 			};
 		};
