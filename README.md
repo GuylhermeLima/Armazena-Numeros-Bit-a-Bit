@@ -9,3 +9,4 @@ Programa que armazena números de 0 a 5000 através de bitwise bit a bit.
 # como funciona
 - O programa armazena entradas de 0 a 5000
 - use o valor -1 para imprimir os números que foram digitados e encerrar o programa
+- Qualquer outro valor sera desconsiderado
